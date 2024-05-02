@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Page with Bordered Rectangle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px; /* Adding padding around the container */
+            background: #f9f9f9; /* Light background color for the body */
+        }
+        .container {
+            border: 2px solid black; /* Rectangle border around the entire page content */
+            padding: 20px;
+            background: #fff; /* White background for the content area */
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background: #f0f0f0;
+        }
+        .header span, .header button {
+            font-size: 16px;
+            margin: auto 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .logout-button, .place-order-button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .center {
+            text-align: center;
+        }
+        .center1 {
+            text-align: right;
+        }
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        .quantity-controls input {
+            width: 30px;
+            text-align: center;
+        }
+        .wide {
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span>Logo</span>
+            <span>Welcome, Tina</span>
+            <button class="logout-button">Logout</button>
+        </div>
+
+        <h2 class="center">Product List</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>Node.js</td>
+                <td>$9.99</td>
+                <td>8</td>
+                <td><button>Add</button></td>
+            </tr>
+            <tr>
+                <td>React</td>
+                <td>$19.99</td>
+                <td class="stock-indicator">5</td>
+                <td><button>Add</button></td>
+            </tr>
+            <tr>
+                <td>Angular</td>
+                <td>$29.99</td>
+                <td>13</td>
+                <td><button>Add</button></td>
+            </tr>
+        </table>
+
+        <h2 class="center">Your Shopping Cart</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>Node.js</td>
+                <td>$9.99</td>
+                <td>$9.99</td>
+                <td class="quantity-controls">
+                    <button>-</button>
+                    <input type="text" value="1">
+                    <button>+</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Angular</td>
+                <td>$29.99</td>
+                <td>$299.90</td>
+                <td class="quantity-controls">
+                    <button>-</button>
+                    <input type="text" value="10">
+                    <button>+</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="text-right">Total:</td>
+                <td>$309.89</td>
+            </tr>
+        </table>
+        <div class="center1">
+            <button class="place-order-button wide">Place Order</button>
+        </div>
+    </div>
+</body>
+</html>
