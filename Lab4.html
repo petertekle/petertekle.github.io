@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Registration</title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f8f6;
+    margin: 0;
+    padding: 0;
+    }
+    .container{
+        background-color: rgb(244, 237, 237);
+        border: 1px solid #06c91d;
+        width: 960px;
+        margin: auto;
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        background-color: aquamarine;        
+    }
+    .header h1{
+        margin: 0;
+        font-size: 35px;
+        padding-left: 10px;
+    }
+    .more-actions{
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        position: relative;
+        left: 20px;
+    }
+    .attention{
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    .Total{
+        display: flex;
+        padding-left: 10px;
+        
+    }
+    .Lunch{
+        width: 50%;
+        
+    }
+    .Peter{
+        width: 50%;
+        
+    }
+    .submit-reset{
+        text-align: center;
+        background-color: rgb(183, 231, 161);
+    }
+    label{
+        display: inline-block;
+        width: 200px;
+    }
+    #states{
+        width: 180px;
+    }
+    #countries{
+        width: 180px;
+    }
+    #textarea{
+        width: 200px;
+        height: 150px;
+    }
+    .Payment{
+        display: flex;
+    }
+    #address{
+        position: relative;
+        bottom: 140px;
+    }
+    
+
+
+    
+    
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Workshop Registration</h1>
+            <button class="more-actions">More Actions ▼</button>
+        </div>
+
+        <p class="attention">Register now while seats are available!</p>
+           
+        
+            <div class="Total">
+            <div class="Peter">
+        <form>
+        
+            <div class="form-group">
+                
+                <label for="first-name">First Name*</label>
+                <input id="first-name" type="text" required><br><br>
+                
+                <label for="last-name">Last Name*</label>
+                <input id="last-name" type="text" required><br><br>
+                
+                <label for="company/institution">Company/Institution*</label>
+                <input id="company/institution" type="text" required><br><br>
+                
+                <label id="address">Address*</label>
+                <textarea id="textarea"></textarea><br><br>
+                
+                <label for="city"> City</label>
+                <input id="city" type="text" required><br><br>
+                
+                <label for="state/province/region">State/Province/Region</label>
+                <select id="states">
+                    <option>-Select-</option>
+                    <option>Texas</option>
+                    <option>Iowa</option>
+                    <option>NewYork</option>
+                    <option>Moscow</option>
+                    <option>Ontario</option>
+                    <option>Alberta</option>
+                </select>
+                <br>
+                
+                <label for="country">Country</label>
+                <select id="countries">
+                    <option>-Select-</option>
+                    <option>USA</option>
+                    <option>Canada</option>
+                    <option>Russia</option>
+                </select><br><br>
+                
+
+                <label for="email">Email*</label>
+                <input id="email" type="text" required><br><br>
+                <label for="phone-number">Phone Number*</label>
+                <input id="phone-number" type="number" required>
+                <br><br>
+
+                </div>
+            </div>
+
+                <div class="Lunch">
+                    <h3>Lunch</h3>
+                    <label for="meal-preference">Meal Preference</label>
+                    <select>
+                        <option>Vegeterian</option>
+                        <option>Eggplant Lasagna</option>
+                        <option>Best Pad Thai</option>
+                        <option>Cauliflower Bowls</option>
+                    </select>             
+                
+
+                <div class="bank-details">
+
+                <div class="Payment-Details">
+                    <h3>Payment Details</h3>
+                    <div class="Payment">
+                        <label for="payment-mode">Payment Mode</label>
+                    <div>
+                        <input type="checkbox">Cash<br>
+                    <input type="checkbox">Cheque<br>
+                    <input type="checkbox">Demand Draft<br>
+                    </div>
+                    </div>
+                </div>  
+                <br>
+
+                <label for="dd/cheque">DD/Cheque No.</label>
+                <input id="dd/cheque" type="number" required><br><br>
+
+                <label for="bank-name">Drawn on (Bank Name)</label>
+                <input id="bank-name" type="text" required><br><br>
+
+                <label for="payable-at">Payable at</label>
+                <input id="payable-at" type="text" required><br><br>
+
+               
+            </div>
+
+            </div>          
+        
+
+            
+
+        </form> 
+        
+        
+    </div> 
+    <div class="submit-reset">
+        <button>Submit</button>
+        <button>Reset</button>                
+    </div>   
+    
+        
+
+    </div>
+    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fpetertekle.github.io%2F">
+        <img src="htmlchecker.png" alt="html validator"/>
+        </a>
+</body>
+</html>
