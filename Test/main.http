@@ -1,0 +1,35 @@
+GET http://localhost:3006/books
+
+###
+GET http://localhost:3006/books/1
+
+###
+POST http://localhost:3006/books
+Content-Type: application/json
+
+{
+    "bookId": 3,
+    "title": "React",
+    "author": {
+        "authorId": 309,
+        "firstname": "Alice",
+        "lastname": "Johnson"
+    }
+}
+
+    
+###
+PUT http://localhost:3006/books/3
+Content-Type: application/json
+
+{
+    "title": "Advanced Node.js",
+    "author": {
+        "authorId": 303,
+        "firstname": "Edward",
+        "lastname": "Jack"
+    }
+}
+
+###
+DELETE http://localhost:3006/books/3
